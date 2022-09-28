@@ -1,0 +1,55 @@
+<html lang>
+
+<head>
+  
+  <link rel="stylesheet" href="sty.css">
+  <title>SAFAR</title>
+</head>
+
+<body>
+  <div class="Backg">
+    <div class="backw">
+      <div class="tap">
+        <div id="btn"></div>
+        <button type="button" class="avtar" onclick="login()">Login</button>
+        <button type="button" class="avtar" onclick="register()">Register</button>
+      </div>
+      <div class="icones">
+        <img src="logo.png" alt="">
+      </div>
+      <form id="login" class="input-group" action="">
+        <input type="text" class="input-field" placeholder="User" required>
+        <input type="text" class="input-field" placeholder="Password" required>
+        <div><a href="pass" >Forgot Password</a></div>
+        <input type="checkbox" class="check-box"><span>Remebember password</span>
+        <button type="submit" class="submit">Login</button>
+      </form>
+      <form id="register" class="input-group" action="">
+        <input type="text" class="input-field" placeholder="User" required>
+        <input type="email" class="input-field" placeholder="Email" required>
+        <input type="text" class="input-field" placeholder="Password" required>
+        <input type="checkbox" class="check-box"><span>agree to terms and conditions</span>
+        <button type="submit" class="submit">Register</button>
+      </form>
+    </div>
+
+  </div>
+  <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+    function register() {
+      x.style.left = "-400px";
+      y.style.left = "50px";
+      z.style.left = "110px";
+    }
+    function login() {
+      x.style.left = "50px";
+      y.style.left = "450px";
+      z.style.left = "0";
+    }
+
+ </script>
+</body>
+
+</html>
