@@ -1,0 +1,76 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+.search-button {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 6px;
+    margin-top: 6px;
+    transition: 0.3s;
+    padding: 8px 16px;
+}
+
+.search-panel {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 20px;
+}
+.search-bar {
+    display: flex;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 6px;
+    overflow: hidden;
+    font-size: 0;
+}
+
+.search-textbox,
+.search-state {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    padding: 12px;
+}
+.search-textbox {
+    padding-right: 0px;
+}
+.search-button,
+.search-state {
+    width: auto;
+    transition: 0.3s;
+}
+.search-state {
+    width: 50%;
+}
+
+.search-gps {
+    font-size: large;
+    line-height: -2px;
+    transition: 0.3s;
+    position: absolute;
+    right: 12px;
+    top: 69px;
+    padding: 8px 16px;
+    font-size: x-large;
+    background-color: transparent;
+    border: none;
+}
+
+.search-state:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.search-state:active {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.search-button:hover {
+    background-color: rgb(230, 230, 230);
+}
+.search-button:active {
+    background-color: rgb(220, 220, 220);
+}
